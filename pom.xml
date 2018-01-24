@@ -72,6 +72,7 @@
         <module>presto-jmx</module>
         <module>presto-record-decoder</module>
         <module>presto-kafka</module>
+        <module>presto-kafka2</module>
         <module>presto-redis</module>
         <module>presto-accumulo</module>
         <module>presto-cassandra</module>
@@ -874,6 +875,18 @@
                         <artifactId>slf4j-log4j12</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.11</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>1.0.0</version>
             </dependency>
 
             <dependency>
